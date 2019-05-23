@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import OfferBar from './layout/top-bar/offer-bar';
+import Navbar from './layout/top-bar/nav-bar';
+import PageOne from './layout/pages/page-one';
+import PageTwo from './layout/pages/page-two';
+import PageThree from './layout/pages/page-three';
+import PageFour from './layout/pages/page-four';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export class App extends Component {
+  render () {
+      return (
+    <div className ="App">
+      <OfferBar />
+      <Navbar />
+      <PageOne />
+      <PageTwo />
+      <PageThree />
+      <PageFour />
     </div>
-  );
+    )
+  }
 }
 
 export default App;
